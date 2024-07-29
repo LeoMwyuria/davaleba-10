@@ -10,7 +10,6 @@ app.get('/api', async (req: Request, res: Response) => {
     const data = await readData();
     res.json(data);
   } catch (error) {
-    console.error('Error reading data:', error);
     res.status(500).send('Error reading data');
   }
 });
@@ -26,7 +25,6 @@ app.get('/api/:id', async (req: Request, res: Response) => {
       res.status(404).send('Expense not found');
     }
   } catch (error) {
-    console.error('Error reading data:', error);
     res.status(500).send('Error reading data');
   }
 });
@@ -45,7 +43,6 @@ app.post('/api', async (req: Request, res: Response) => {
     await writeData(data);
     res.status(201).json(newExpense);
   } catch (error) {
-    console.error('Error writing data:', error);
     res.status(500).send('Error writing data');
   }
 });
@@ -63,7 +60,6 @@ app.put('/api/:id', async (req: Request, res: Response) => {
       res.status(404).send('Expense not found');
     }
   } catch (error) {
-    console.error('Error writing data:', error);
     res.status(500).send('Error writing data');
   }
 });
@@ -80,7 +76,6 @@ app.delete('/api/:id', async (req: Request, res: Response) => {
       res.status(404).send('Expense not found');
     }
   } catch (error) {
-    console.error('Error writing data:', error);
     res.status(500).send('Error writing data');
   }
 });
