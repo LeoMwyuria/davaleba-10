@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Tea",
+    "cost": 1,
+    "createdAt": "29.7.2024"
+  },
+  {
+    "id": 2,
+    "name": "Wine",
+    "cost": 14,
+    "createdAt": "29.7.2024"
+  },
+  {
+    "id": 3,
+    "name": "Milk",
+    "cost": 2,
+    "createdAt": "29.7.2024"
+  },
+  {
+    "id": 4,
+    "name": "Water",
+    "cost": 1,
+    "createdAt": "29.7.2024"
+  }
+]
